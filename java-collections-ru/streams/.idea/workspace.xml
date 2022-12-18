@@ -4,7 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="4820fb8a-6ff4-4c43-9ba3-8d7dd2b9da69" name="Changes" comment="" />
+    <list default="true" id="055d6b0a-5e0f-4228-9aa8-966e3e20e45d" name="Changes" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -15,50 +15,13 @@
       <ProjectState />
     </projectState>
   </component>
-  <component name="ExternalProjectsManager">
-    <system id="GRADLE">
-      <state>
-        <task path="$PROJECT_DIR$">
-          <activation />
-        </task>
-        <projects_view>
-          <tree_state>
-            <expand>
-              <path>
-                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
-                <item name="maps" type="f1a62948:ProjectNode" />
-              </path>
-              <path>
-                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
-                <item name="maps" type="f1a62948:ProjectNode" />
-                <item name="Tasks" type="e4a08cd1:TasksNode" />
-              </path>
-              <path>
-                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
-                <item name="maps" type="f1a62948:ProjectNode" />
-                <item name="Tasks" type="e4a08cd1:TasksNode" />
-                <item name="build" type="c8890929:TasksNode$1" />
-              </path>
-              <path>
-                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
-                <item name="maps" type="f1a62948:ProjectNode" />
-                <item name="Tasks" type="e4a08cd1:TasksNode" />
-                <item name="verification" type="c8890929:TasksNode$1" />
-              </path>
-            </expand>
-            <select />
-          </tree_state>
-        </projects_view>
-      </state>
-    </system>
-  </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../.." />
   </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
   </component>
-  <component name="ProjectId" id="2IfbM1mPZO7RSIjcmBiRKHZVV1B" />
+  <component name="ProjectId" id="2J54WgCsfAZr8xpv6cALVsMjrXJ" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
@@ -68,13 +31,13 @@
   "keyToString": {
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
-    "last_opened_file_path": "C:/Users/user/Desktop/жоска ботаю/hexlet-assignments/java-collections-ru/maps"
+    "last_opened_file_path": "C:/Users/user/Desktop/жоска ботаю/hexlet-assignments/java-collections-ru/streams"
   }
 }]]></component>
-  <component name="RunManager" selected="Gradle.maps [test]">
+  <component name="RunManager" selected="Gradle.streams [test]">
     <configuration name="App" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="exercise.App" />
-      <module name="maps.main" />
+      <module name="streams.main" />
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="exercise.*" />
@@ -85,7 +48,7 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="maps [build]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+    <configuration name="streams [build]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
         <option name="externalProjectPath" value="$PROJECT_DIR$" />
@@ -106,7 +69,7 @@
       <DebugAllEnabled>false</DebugAllEnabled>
       <method v="2" />
     </configuration>
-    <configuration name="maps [test]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+    <configuration name="streams [test]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
         <option name="externalProjectPath" value="$PROJECT_DIR$" />
@@ -129,20 +92,20 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Gradle.maps [test]" />
+        <item itemvalue="Gradle.streams [test]" />
         <item itemvalue="Application.App" />
-        <item itemvalue="Gradle.maps [build]" />
+        <item itemvalue="Gradle.streams [build]" />
       </list>
     </recent_temporary>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="4820fb8a-6ff4-4c43-9ba3-8d7dd2b9da69" name="Changes" comment="" />
-      <created>1670575534622</created>
+      <changelist id="055d6b0a-5e0f-4228-9aa8-966e3e20e45d" name="Changes" comment="" />
+      <created>1671354647727</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
-      <updated>1670575534622</updated>
+      <updated>1671354647727</updated>
     </task>
     <servers />
   </component>
