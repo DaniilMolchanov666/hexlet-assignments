@@ -4,7 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="747c97dd-c5c1-4abc-a7b7-5ecf1f1f2b3c" name="Changes" comment="" />
+    <list default="true" id="610292f2-11d4-4dc9-a9f2-a0e842e9879c" name="Changes" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -52,7 +52,7 @@
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
   </component>
-  <component name="ProjectId" id="2JUUevMX5J9EoTG2fIQRGdPFCL7" />
+  <component name="ProjectId" id="2KBTS6MktRiVXRE5Q3Go27AGxZT" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
@@ -62,7 +62,7 @@
   "keyToString": {
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
-    "last_opened_file_path": "C:/Users/user/Desktop/жоска ботаю/hexlet-assignments/java-collections-ru/advanced-streams_11.01.23_16.22.55"
+    "last_opened_file_path": "C:/Users/user/Desktop/жоска ботаю/hexlet-assignments/java-collections-ru/advanced-streams"
   }
 }]]></component>
   <component name="RunManager">
@@ -96,11 +96,11 @@
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="747c97dd-c5c1-4abc-a7b7-5ecf1f1f2b3c" name="Changes" comment="" />
-      <created>1672132255848</created>
+      <changelist id="610292f2-11d4-4dc9-a9f2-a0e842e9879c" name="Changes" comment="" />
+      <created>1673446976277</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
-      <updated>1672132255848</updated>
+      <updated>1673446976277</updated>
     </task>
     <servers />
   </component>

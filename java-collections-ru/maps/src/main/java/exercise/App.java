@@ -2,6 +2,8 @@ package exercise;
 
 import java.util.HashMap;
 import java.util.Map;
+import java.util.TreeMap;
+
 class App {
 
     public static Map<String, Integer> getWordCount(String sentence){
@@ -25,6 +27,24 @@ class App {
         return dictionary;
     }
 
+    public static Map getWordCount2(String sentence) {
+
+        String[] words = sentence.split(" ");
+        Map map = new HashMap();
+
+        if (sentence.length() == 0) {
+            return map;
+        }
+
+        for (String word : words) {
+            int wordCount = (int) map.getOrDefault(word, 0);
+            wordCount += 1;
+            map.put(word, wordCount);
+        }
+
+        return map;
+    }
+
     public static String toString(Map<String, Integer> map) {
 
         if (map.isEmpty()) {
@@ -41,6 +61,27 @@ class App {
         a.append("}" + "\n");
 
         return a.toString();
+
+    }
+
+    public static void main(String[] args) {
+
+        Map <String, Integer> map = getWordCount(" A A A A B C C D D D");
+
+        System.out.println(map.values());
+        System.out.println(map.replace("A", 10));
+        System.out.println(map);
+        System.out.println(map.remove("A"));
+        System.out.println(map);
+        map.replace("B", 1, 5);
+        System.out.println(map);
+
+        for (String a: map.keySet()) {
+            System.out.println(a);
+        }
+        for (int a: map.values()) {
+            System.out.println(a);
+        }
 
     }
 }

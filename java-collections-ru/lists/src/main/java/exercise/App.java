@@ -6,10 +6,6 @@ import java.util.List;
 public class App {
     public static boolean scrabble(String word1, String word2) {
 
-        if (word2.length() > word1.length()) {
-            return false;
-        }
-
         char[] array1 = word1.toLowerCase().toCharArray();
         char[] array2 = word2.toLowerCase().toCharArray();
 
@@ -28,5 +24,13 @@ public class App {
             return false;
         }
         return true;
+    }
+
+    public static void main(String[] args) {
+
+        String symbols = "12345";
+        String[] letters = symbols.split("");
+
+        System.out.println(letters.length);
     }
 }

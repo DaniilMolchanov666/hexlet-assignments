@@ -9,7 +9,7 @@ import java.util.List;
 
 class SorterTest {
     @Test
-    void testSorterWithoutMan() throws ParseException {
+    void testSorterWithoutMan() {
         List<Map<String, String>> users = List.of(
             Map.of("name", "Anna Sidorova", "birthday", "1996-09-09", "gender", "female"),
             Map.of("name", "Vanessa Vulf", "birthday", "1985-11-16", "gender", "female"),
@@ -22,7 +22,7 @@ class SorterTest {
     }
 
     @Test
-    void testSorter() throws ParseException {
+    void testSorter() {
         List<Map<String, String>> users = List.of(
             Map.of("name", "Vladimir Nikolaev", "birthday", "1990-12-27", "gender", "male"),
             Map.of("name", "Andrey Petrov", "birthday", "1989-11-23", "gender", "male"),
@@ -38,7 +38,7 @@ class SorterTest {
     }
 
     @Test
-    void testSorterWithEmptyList() throws ParseException {
+    void testSorterWithEmptyList() {
         List<Map<String, String>> users = List.of();
         List<String> actual = Sorter.takeOldestMans(users);
         List expected = List.of();
