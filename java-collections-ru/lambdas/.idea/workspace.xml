@@ -65,7 +65,7 @@
     "last_opened_file_path": "C:/Users/user/Desktop/жоска ботаю/java-project-61"
   }
 }]]></component>
-  <component name="RunManager" selected="Gradle.lambdas [test]">
+  <component name="RunManager" selected="Application.App">
     <configuration name="App" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="exercise.App" />
       <module name="lambdas.main" />
