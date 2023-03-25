@@ -24,9 +24,13 @@ class App {
         List<String> result = App.buildApartmentsList(apartments, 3);
         System.out.println(result);
 
+<<<<<<< HEAD
 
         ReversedSequence r = new ReversedSequence("");
         System.out.println(r.subSequence(0, 10));
     }
 
+=======
+    }
+>>>>>>> 3ce96c619a548ad576c1464074fba742a8bdf1d0
 }

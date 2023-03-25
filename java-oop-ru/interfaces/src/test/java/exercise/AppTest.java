@@ -56,6 +56,7 @@ class AppTest {
         assertThat(result).isEqualTo(expected);
     }
 
+<<<<<<< HEAD
     @Test
     void testReversedSequence() {
         String s = "12345";
@@ -66,4 +67,9 @@ class AppTest {
         assertThat(new ReversedSequence("").subSequence(0, 10)).isEmpty();
         assertThat(r.subSequence(0,s.length() - 1)).isEqualTo(expected2);
     }
+=======
+    // BEGIN
+    
+    // END
+>>>>>>> 3ce96c619a548ad576c1464074fba742a8bdf1d0
 }

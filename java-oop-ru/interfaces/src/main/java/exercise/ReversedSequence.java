@@ -1,5 +1,6 @@
 package exercise;
 
+<<<<<<< HEAD
 class ReversedSequence implements CharSequence{
 
     private String s;
@@ -34,3 +35,8 @@ class ReversedSequence implements CharSequence{
         return b.toString();
     }
 }
+=======
+// BEGIN
+
+// END
+>>>>>>> 3ce96c619a548ad576c1464074fba742a8bdf1d0
