@@ -1,11 +1,12 @@
 package exercise;
 
+
 import org.junit.jupiter.api.Test;
 import static org.assertj.core.api.Assertions.assertThat;
 import static com.github.stefanbirkner.systemlambda.SystemLambda.tapSystemOut;
 
 
-class TcpTest {
+class AppTest {
 
     @Test
     void testConnect1()  {
