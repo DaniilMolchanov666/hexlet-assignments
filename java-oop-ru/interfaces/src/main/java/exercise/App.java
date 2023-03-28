@@ -5,7 +5,7 @@ import java.util.Comparator;
 import java.util.List;
 
 class App {
-    public static List<String>  buildApartmentsList(List<Home> listOfHomes, int count) {
+    public static List<String> buildApartmentsList(List<Home> listOfHomes, int count) {
         return listOfHomes.stream()
                 .limit(count)
                 .sorted(Comparator.comparingDouble(Home::getArea))
@@ -24,13 +24,5 @@ class App {
         List<String> result = App.buildApartmentsList(apartments, 3);
         System.out.println(result);
 
-<<<<<<< HEAD
-
-        ReversedSequence r = new ReversedSequence("");
-        System.out.println(r.subSequence(0, 10));
     }
-
-=======
-    }
->>>>>>> 3ce96c619a548ad576c1464074fba742a8bdf1d0
 }

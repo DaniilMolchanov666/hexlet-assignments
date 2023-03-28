@@ -16,4 +16,5 @@ import java.lang.annotation.RetentionPolicy;
 // Это нужно для того, чтобы мы могли в процессе выполнения обращаться к классу через рефлексию.
 @Retention(RetentionPolicy.RUNTIME)
 public @interface NotNull {
+
 }
