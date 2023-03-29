@@ -8,7 +8,7 @@ import java.util.List;
 import java.util.ArrayList;
 
 
-class AppTest {
+class   AppTest {
 
     @Test
     void testSingleTag() {
