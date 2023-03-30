@@ -1,0 +1,12 @@
+{
+  "id" : 123,
+  "brand" : "BMV",
+  "model" : "X9",
+  "color" : "Black",
+  "owner" : {
+    "id" : 1,
+    "firstName" : "1",
+    "lastName" : "1",
+    "age" : 1
+  }
+}
