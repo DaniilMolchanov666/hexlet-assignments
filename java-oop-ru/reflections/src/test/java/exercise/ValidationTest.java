@@ -8,8 +8,6 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.Map;
 
-
-
 class ValidationTest {
 
     @Test
@@ -38,5 +36,6 @@ class ValidationTest {
         Map<String, List<String>> expected = Map.of("country", listOfNullError, "city", listOfMinLengthError);
         Map<String, List<String>> result = Validator.advancedValidate(a);
         assertThat(result).isEqualTo(expected);
+
     }
 }
