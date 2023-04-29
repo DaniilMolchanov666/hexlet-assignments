@@ -39,6 +39,5 @@ tasks.withType(JavaCompile) {
   options.encoding = "UTF-8"
 }
 
-// BEGIN
-
-// END
+task stage(dependsOn: ['clean', 'installDist'])
+installDist.mustRunAfter clean
