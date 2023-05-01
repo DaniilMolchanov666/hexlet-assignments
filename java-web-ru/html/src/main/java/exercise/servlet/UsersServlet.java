@@ -83,12 +83,19 @@ public class UsersServlet extends HttpServlet {
 
         PrintWriter p = response.getWriter();
         StringBuilder s = new StringBuilder();
-        getUsers()
+        s.append(getUsers()
                 .stream()
                 .filter(m -> m.containsValue(id))
-                .flatMap(e->e.entrySet().stream())
-                .forEach(a-> s.append(a).append("\n"));
-        response.setContentType("text/html;charset=UTF-8");
+                .findAny()
+                .orElseGet(() -> {
+                    try {
+                        response.sendError(404);
+                    } catch (IOException e) {
+                        throw new RuntimeException(e);
+                    }
+                    return null;
+                }));
+
         p.println(s);
     }
 }

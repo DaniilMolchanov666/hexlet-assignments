@@ -29,7 +29,7 @@ public class WelcomeServlet extends HttpServlet {
                 <body>
                     <div class=\"container\">
                         <h1> Hello Body! </h1>
-                        <a href=\"/users/\">Пользователи</a>
+                        <a href=\"/users\">Пользователи</a>
                                   
                     </div>
                 </body>
