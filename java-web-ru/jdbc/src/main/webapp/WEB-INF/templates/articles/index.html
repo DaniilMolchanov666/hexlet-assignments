@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout"
+  layout:decorate="~{layouts/application.html}">
+
+<head>
+  <title>Articles</title>
+</head>
+<section layout:fragment="content">
+  <table class="table">
+    <thead>
+      <th>ID</th>
+      <th>NAME</th>
+    </thead>
+    <tbody>
+      <tr th:each="user : ${list}" th:object="${user}">
+        <td th:text="*{ID}">  </td>
+        <td> <a th:text="*{TITLE}" th:href="@{/articles/{ID}(ID=*{ID})}"></a></td>
+      </tr>
+      <div class="container">
+        <nav>
+          <ul class="pagination justify-content-center">
+            <li class="page-item">
+              <a class="page-link" th:href="@{/articles(page=(${page < 2}) ? 1 : (${page - 1}))}">Prev</a>
+            </li>
+            <li class="page-item">
+              <a class="page-link" th:href="@{/articles(page=${page + 1})}">Next</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </tbody>
+  </table>
+</section>
