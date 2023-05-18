@@ -110,10 +110,19 @@ public class ArticlesServlet extends HttpServlet {
         Map<String, Object> map = new HashMap<>();
 
         try {
-            if (getData(request, id) == null) {
+            r.next();
+
+            if (r.wasNull()) {
                 throw new SQLException();
             }
-            map = getData(request, id);
+
+//            if(!r.first()) {
+//                ...
+//            }
+            map.put("ID", r.getString("id"));
+            map.put("TITLE", r.getString("title"));
+            map.put("BODY", r.getString("body"));
+
 
         } catch (SQLException e) {
             response.sendError(404);

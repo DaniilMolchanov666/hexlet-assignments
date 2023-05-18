@@ -6,7 +6,24 @@ layout:decorate="~{layouts/application.html}">
   <title>Sign Up</title>
 </head>
 <section layout:fragment="content">
-  <!-- BEGIN -->
-  
-  <!-- END -->
+  <h1> Регистрация </h1>
+  <form action="/login" method="post" th:object="${user}">
+    <div class="mb-3">
+      <label>Email</label>
+      <input class="form-control" type="text" name="">
+    </div>
+    <div class="mb-3">
+      <label>Имя</label>
+      <input class="form-control" type="text" name="">
+    </div>
+    <div class="mb-3">
+      <label>Фамилия</label>
+      <input class="form-control" type="text" name="">
+    </div>
+    <div class="mb-3">
+      <label>Пароль</label>
+      <input class="form-control" type="password" name="">
+    </div>
+    <button class="btn btn-primary" type="submit">Создать</button>
+  </form>
 </section>

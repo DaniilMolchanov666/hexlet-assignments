@@ -78,7 +78,7 @@ public class SessionServlet extends HttpServlet {
 
         if (user == null || !user.get("password").equals(password)) {
 
-            LOGGER.log(Level.INFO, "user with id " + user.get("email")
+            LOGGER.log(Level.WARNING, "user with id " + user.get("email")
             + " entered incorrect data");
 
             request.setAttribute("user", userData);
