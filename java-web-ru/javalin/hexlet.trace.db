@@ -1,0 +1,88 @@
+2023-05-19 15:07:15 jdbc[4]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Таблица "ARTICLE" не найдена
+Table "ARTICLE" not found; SQL statement:
+alter table article drop constraint if exists fk_article_category_id [42102-200]
+2023-05-19 18:27:03 jdbc[4]: exception
+org.h2.jdbc.JdbcSQLDataException: Ошибка преобразования данных при конвертации "'Category@0(id:1, name:Common)' (ARTICLE: ""CATEGORY_ID"" BIGINT NOT NULL)"
+Data conversion error converting "'Category@0(id:1, name:Common)' (ARTICLE: ""CATEGORY_ID"" BIGINT NOT NULL)"; SQL statement:
+update article set title=?, body=?, category_id=? where id = ? [22018-200]
+2023-05-19 18:28:00 jdbc[4]: exception
+org.h2.jdbc.JdbcSQLDataException: Ошибка преобразования данных при конвертации "'Common' (ARTICLE: ""CATEGORY_ID"" BIGINT NOT NULL)"
+Data conversion error converting "'Common' (ARTICLE: ""CATEGORY_ID"" BIGINT NOT NULL)"; SQL statement:
+update article set title=?, body=?, category_id=? where id = ? [22018-200]
+2023-05-19 18:29:55 jdbc[4]: exception
+org.h2.jdbc.JdbcSQLDataException: Ошибка преобразования данных при конвертации "'Common' (ARTICLE: ""CATEGORY_ID"" BIGINT NOT NULL)"
+Data conversion error converting "'Common' (ARTICLE: ""CATEGORY_ID"" BIGINT NOT NULL)"; SQL statement:
+update article set title=?, body=?, category_id=? where id = ? [22018-200]
+2023-05-19 20:23:36 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Столбец "PK_ARTICLE" не найден
+Column "PK_ARTICLE" not found; SQL statement:
+update article set title=?, body=?, pk_article=? where id = ? [42122-200]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:453)
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:429)
+	at org.h2.message.DbException.get(DbException.java:205)
+	at org.h2.message.DbException.get(DbException.java:181)
+	at org.h2.table.Table.getColumn(Table.java:703)
+	at org.h2.command.Parser.readTableColumn(Parser.java:1274)
+	at org.h2.command.Parser.parseUpdateSetClause(Parser.java:1325)
+	at org.h2.command.Parser.parseUpdate(Parser.java:1290)
+	at org.h2.command.Parser.parsePrepared(Parser.java:1005)
+	at org.h2.command.Parser.parse(Parser.java:843)
+	at org.h2.command.Parser.parse(Parser.java:815)
+	at org.h2.command.Parser.prepareCommand(Parser.java:738)
+	at org.h2.engine.Session.prepareLocal(Session.java:657)
+	at org.h2.engine.Session.prepareCommand(Session.java:595)
+	at org.h2.jdbc.JdbcConnection.prepareCommand(JdbcConnection.java:1235)
+	at org.h2.jdbc.JdbcPreparedStatement.<init>(JdbcPreparedStatement.java:76)
+	at org.h2.jdbc.JdbcConnection.prepareStatement(JdbcConnection.java:352)
+	at io.ebean.datasource.pool.PooledConnection.prepareStatement(PooledConnection.java:308)
+	at io.ebean.datasource.pool.PooledConnection.prepareStatement(PooledConnection.java:285)
+	at io.ebeaninternal.server.query.CQueryUpdate.execute(CQueryUpdate.java:73)
+	at io.ebeaninternal.server.query.CQueryEngine.executeUpdate(CQueryEngine.java:74)
+	at io.ebeaninternal.server.query.CQueryEngine.update(CQueryEngine.java:69)
+	at io.ebeaninternal.server.query.DefaultOrmQueryEngine.update(DefaultOrmQueryEngine.java:73)
+	at io.ebeaninternal.server.core.OrmQueryRequest.update(OrmQueryRequest.java:330)
+	at io.ebeaninternal.server.core.DefaultServer.update(DefaultServer.java:1263)
+	at io.ebeaninternal.server.querydefn.DefaultOrmQuery.update(DefaultOrmQuery.java:1412)
+	at io.ebeaninternal.server.querydefn.DefaultUpdateQuery.update(DefaultUpdateQuery.java:74)
+	at exercise.controllers.ArticleController.lambda$static$5(ArticleController.java:88)
+	at io.javalin.core.security.SecurityUtil.noopAccessManager(SecurityUtil.kt:20)
+	at io.javalin.http.JavalinServlet.addHandler$lambda-5(JavalinServlet.kt:113)
+	at io.javalin.http.JavalinServlet$service$tryBeforeAndEndpointHandlers$1.invoke(JavalinServlet.kt:44)
+	at io.javalin.http.JavalinServlet$service$tryBeforeAndEndpointHandlers$1.invoke(JavalinServlet.kt:39)
+	at io.javalin.http.JavalinServlet.service$tryWithExceptionMapper(JavalinServlet.kt:129)
+	at io.javalin.http.JavalinServlet.service$tryBeforeAndEndpointHandlers(JavalinServlet.kt:39)
+	at io.javalin.http.JavalinServlet.service(JavalinServlet.kt:87)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:790)
+	at io.javalin.jetty.JavalinJettyServlet.service(JavalinJettyServlet.kt:58)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:790)
+	at org.eclipse.jetty.servlet.ServletHolder.handle(ServletHolder.java:799)
+	at org.eclipse.jetty.servlet.ServletHandler.doHandle(ServletHandler.java:550)
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextHandle(ScopedHandler.java:233)
+	at org.eclipse.jetty.server.session.SessionHandler.doHandle(SessionHandler.java:1624)
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextHandle(ScopedHandler.java:233)
+	at io.javalin.jetty.JettyServer$start$wsAndHttpHandler$1.doHandle(JettyServer.kt:52)
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextScope(ScopedHandler.java:188)
+	at org.eclipse.jetty.servlet.ServletHandler.doScope(ServletHandler.java:501)
+	at org.eclipse.jetty.server.session.SessionHandler.doScope(SessionHandler.java:1594)
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextScope(ScopedHandler.java:186)
+	at org.eclipse.jetty.server.handler.ContextHandler.doScope(ContextHandler.java:1349)
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:141)
+	at org.eclipse.jetty.server.handler.StatisticsHandler.handle(StatisticsHandler.java:179)
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:127)
+	at org.eclipse.jetty.server.Server.handle(Server.java:516)
+	at org.eclipse.jetty.server.HttpChannel.lambda$handle$1(HttpChannel.java:388)
+	at org.eclipse.jetty.server.HttpChannel.dispatch(HttpChannel.java:633)
+	at org.eclipse.jetty.server.HttpChannel.handle(HttpChannel.java:380)
+	at org.eclipse.jetty.server.HttpConnection.onFillable(HttpConnection.java:277)
+	at org.eclipse.jetty.io.AbstractConnection$ReadCallback.succeeded(AbstractConnection.java:311)
+	at org.eclipse.jetty.io.FillInterest.fillable(FillInterest.java:105)
+	at org.eclipse.jetty.io.ChannelEndPoint$1.run(ChannelEndPoint.java:104)
+	at org.eclipse.jetty.util.thread.strategy.EatWhatYouKill.runTask(EatWhatYouKill.java:338)
+	at org.eclipse.jetty.util.thread.strategy.EatWhatYouKill.doProduce(EatWhatYouKill.java:315)
+	at org.eclipse.jetty.util.thread.strategy.EatWhatYouKill.tryProduce(EatWhatYouKill.java:173)
+	at org.eclipse.jetty.util.thread.strategy.EatWhatYouKill.run(EatWhatYouKill.java:131)
+	at org.eclipse.jetty.util.thread.ReservedThreadExecutor$ReservedThread.run(ReservedThreadExecutor.java:386)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool.runJob(QueuedThreadPool.java:883)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool$Runner.run(QueuedThreadPool.java:1034)
+	at java.base/java.lang.Thread.run(Thread.java:833)
