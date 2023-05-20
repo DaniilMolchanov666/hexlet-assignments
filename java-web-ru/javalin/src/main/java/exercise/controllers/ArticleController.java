@@ -39,7 +39,7 @@ public final class ArticleController {
     public static Handler createArticle = ctx -> {
         String title = ctx.formParam("title");
         String body = ctx.formParam("body");
-        long categoryId = ctx.pathParamAsClass("categoryId", Long.class).getOrDefault(null);
+        long categoryId = ctx.formParamAsClass("categoryId", Long.class).getOrDefault(null);
 
         Category category = new QCategory()
             .id.equalTo(categoryId)
@@ -78,13 +78,14 @@ public final class ArticleController {
     public static Handler updateArticle = ctx -> {
         String title = ctx.formParam("title");
         String body = ctx.formParam("body");
-        long categoryId = ctx.pathParamAsClass("id", Long.class).getOrDefault(null);
+        long category = ctx.pathParamAsClass("id", Long.class).getOrDefault(null);
+        long categoryId = ctx.formParamAsClass("categoryId", Long.class).getOrDefault(null);
 
-        new QArticle().id.eq(categoryId)
+        new QArticle().id.eq(category)
                 .asUpdate()
                     .set("title", title)
                     .set("body", body)
-                    .set("category_id", new QCategory().id.eq(categoryId).findOne())
+                    .set("category_id", new QCategory().id.eq(categoryId).findOne().getId())
                     .update();
 
         ctx.sessionAttribute("flash", "Статья успешно отредактирована");

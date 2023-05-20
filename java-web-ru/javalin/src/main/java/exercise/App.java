@@ -41,24 +41,20 @@ public final class App {
 
     // Метод добавляет маршруты в переданное приложение
     private static void addRoutes(Javalin app) {
-        // Для GET-запроса на маршрут / будет выполняться
-        // обработчик welcome в контроллере RootController
-        app.get("/", RootController.welcome);
-        app.routes(() -> path("/articles", () -> {
-            get(ArticleController.listArticles);
-            post(ArticleController.createArticle);
-        }));
-        app.routes(() -> path("/articles/{id}/edit", () -> {
-            get(ArticleController.editArticle);
-            post(ArticleController.updateArticle);
-        }));
-        app.routes(() -> path("/articles/{id}/delete", () -> {
-            get(ArticleController.deleteArticle);
-            post(ArticleController.destroyArticle);
-        }));
-        app.get("/articles/{id}", ArticleController.showArticle);
-        app.get("/articles/new", ArticleController.newArticle);
 
+        app.get("/articles/new", ArticleController.newArticle);
+        app.get("/articles/{id}", ArticleController.showArticle);
+
+        app.get("/", RootController.welcome);
+
+        app.get("/articles", ArticleController.listArticles);
+        app.post("/articles", ArticleController.createArticle);
+
+        app.get("/articles/{id}/edit", ArticleController.editArticle);
+        app.post("/articles/{id}/edit", ArticleController.updateArticle);
+
+        app.get("/articles/{id}/delete", ArticleController.deleteArticle);
+        app.post("/articles/{id}/delete", ArticleController.destroyArticle);
     }
 
     public static Javalin getApp() {
