@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans
+		https://www.springframework.org/schema/beans/spring-beans.xsd">
+
+	<context:component-scan base-package="exercise"/>
+
+<!--	<bean id="cat"-->
+<!--	    class="exercise.Cat">-->
+<!--	</bean>-->
+
+<!--	<bean id="catget"-->
+<!--		class="exercise.CatGet">-->
+<!--		<constructor-arg ref="cat"/>-->
+<!--		<property name="cat" ref="cat"/>-->
+<!--		<property name="catName" value="${catget.catname}"/>-->
+<!--	</bean>-->
+
+</beans>
